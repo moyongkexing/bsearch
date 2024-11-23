@@ -1,40 +1,25 @@
-# README
+# bsearch
 
-## About
+`bsearch`は、曖昧検索機能を提供するツールです。  
+解析されたデータとユーザー入力を比較し、類似性に基づいた検索結果を効率的に返すことを目的としています。
 
-This template comes with Vite, React, TypeScript, TailwindCSS and shadcn/ui.
+## 特徴
 
-Built with `Wails v2.5.1` and [shadcn's CLI](https://ui.shadcn.com/docs/cli)
+- **曖昧検索機能**: ユーザー入力に基づき、部分一致や類似性に基づいた結果を返します。
+- **拡張可能なデータソース**: Google スプレッドシートや Redmine API など、さまざまなデータソースに対応。
+- **高いカスタマイズ性**: 他の案件にも適用可能な汎用性を備えています。
 
-### Using the Template
-```console
-wails init -n project-name -t https://github.com/Mahcks/wails-vite-react-tailwind-shadcnui-ts
-```
+## 使用技術
 
-```console
-cd frontend
-```
+### バックエンド
 
-```console
-npm install
-```
+- **言語**: Go
+- **フレームワーク**: Wails（デスクトップアプリケーション開発のため）
+- **検索エンジン**: 未定
+- **データ処理**: 未定
 
-### Installing Components
-To install components, use shadcn's CLI tool to install
+### フロントエンド
 
-More info here: https://ui.shadcn.com/docs/cli#add
-
-Example:
-```console
-npx shadcn-ui@latest add [component]
-```
-
-## Live Development
-
-To run in live development mode, run `wails dev` in the project directory. In another terminal, go into the `frontend`
-directory and run `npm run dev`. The frontend dev server will run on http://localhost:34115. Connect to this in your
-browser and connect to your application.
-
-## Building
-
-To build a redistributable, production mode package, use `wails build`.
+- **言語**: TypeScript
+- **フレームワーク**: React
+- **UI ライブラリ**: ShadCN/UI
